@@ -1,0 +1,21 @@
+//Credit goes to Anonymous posting online
+
+#include <iostream>
+
+using namespace std;
+
+int factorialR(int n)
+{
+  if (n<=0)
+    return 1;
+  return n * factorialR(n-1); //recursively calling factorialR
+}
+
+int main() 
+{
+  int n;
+  cout << "Enter a positive integer: ";
+  cin >> n; //input from user
+  cout << factorialR(n) << endl; //calling recursive function
+  return 0;
+}
